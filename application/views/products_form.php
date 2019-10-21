@@ -25,7 +25,7 @@ $this->load->view('template/sidebar');
             <select name="category_id" class="form-control">
             
             <?php foreach($dd_category as $row):?>
-            <option value="<?php echo $row->id;?>"><?php echo $row->name;?>   
+            <option value="<?=$row->id;?>" <?php if($row->id == $category_id) echo 'selected="selected"'; ?> > <?php echo $row->name; ?>  
             </option>
             <?php endforeach;?>
             </select>
