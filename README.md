@@ -10,5 +10,5 @@ soal
 restore gudang.sql ke phpmyadmin dengan db gudang
 -cara akses
 -rubah folder yg didownload dengan nama a
--kemudian localhost:8084/a/auth
+-kemudian localhost/a/auth
 
