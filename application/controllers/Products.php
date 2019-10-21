@@ -51,6 +51,7 @@ class Products extends CI_Controller
         'name' => set_value('name'),
         'stock' => set_value('stock'),
         'deskripsi' => set_value('deskripsi'),
+        'category_id' => set_value('category_id'),
         'dd_category' => $this->Products_model->dd_kategori()->result(),
     );
         // print_r($data);
