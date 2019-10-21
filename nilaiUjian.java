@@ -38,11 +38,11 @@ public class nilaiUjian {
         double nTugas = tugas * 0.2;
         double nUts = uts * 0.3;
         double nUas = uas * 0.4;
-//        double total = nKehadiran + nTugas + nUts + nUas;
-        double total = 80;
-        if(total>80){
+        double total = nKehadiran + nTugas + nUts + nUas;
+      //  double total = 80;
+        if(total>=80){
             System.out.println("Nama :"+nama);
-            System.out.println("NIM :"+nim);
+            System..println("NIM :"+nim);
             System.out.println("Nilai : A");
         }else if(total > 71 && total < 79){
             System.out.println("Nama :"+nama);
