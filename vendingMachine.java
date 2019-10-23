@@ -30,7 +30,17 @@ public class vendingMachine {
         int jumlah = b - a;
         int kembalian;
         int[]nominal = {50000,20000,10000,5000};
-        for (int i = 0; i < nominal.length; i++) {
+        // for (int i = 0; i < nominal.length; i++) {
+        //     if(a>=5000){
+        //         if(jumlah/nominal[i]!=0){
+        //              System.out.println(jumlah/nominal[i]+" lembar uang Rp"+nominal[i]);
+        //          }
+        //     }
+        //     kembalian=jumlah%nominal[i];
+        //     jumlah=kembalian;
+        // }
+        int i = 0;
+        while(i < nominal.length){
             if(a>=5000){
                 if(jumlah/nominal[i]!=0){
                      System.out.println(jumlah/nominal[i]+" lembar uang Rp"+nominal[i]);
@@ -38,6 +48,7 @@ public class vendingMachine {
             }
             kembalian=jumlah%nominal[i];
             jumlah=kembalian;
+            i++;
         }
         if(a!=0){
            System.out.println(jumlah+" Di Sumbangkan");
